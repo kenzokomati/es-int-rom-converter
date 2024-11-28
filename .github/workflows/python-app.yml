@@ -1,4 +1,4 @@
-name: Run Python Tests and Publish to SonarCloud
+ name: Run Python Tests and Publish to SonarCloud
 
 on:
   push:
@@ -30,7 +30,7 @@ jobs:
 
       # Executar os testes e gerar relatório de cobertura
       - name: Run pytest
-        run: pytest --cov=volume_cilindro --cov-report=xml
+        run: pytest --cov=int_to_roman --cov-report=xml
 
       # Armazenar o relatório de cobertura como artefato
       - name: Upload coverage report
